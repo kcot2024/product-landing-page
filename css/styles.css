@@ -1,0 +1,265 @@
+*{
+ box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+ul,
+ol
+ {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #16181f;
+}
+header> nav > div > a >img {
+ width: 50%;
+}
+header > nav > ul {
+  display: flex;
+  gap: 20px;
+ color: aliceblue;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background-image: url('../img/cabecera.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+}
+#hero h1, #hero div {
+  position: relative;
+  z-index: 1; 
+}
+#hero h1 {
+  font-size: 55px;
+}
+
+#hero p {
+  margin: 5px ;
+  font-size: 25px;
+}
+#features> span{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+#features-hijo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 30px;
+  gap: 30px;
+}
+#features-hijo> div{
+  width: 300px;
+  height: 400px;
+  background-color: rgb(56, 56, 56);
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px rgba(56, 56, 56, 0.3); 
+}
+#features-hijo> div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+#features> #features-hijo> div> img{
+  width: 100px;
+}
+#features> #features-hijo> div> h3{
+  margin-top: 10px;
+  font-size: 19px;
+  color: #bdba00;
+}
+#features> #features-hijo> div> p{
+  width: max-content;
+  margin-top: 10px;
+  font-size: 16px;
+}
+#Envio{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #16181f;
+}
+#Envio> span{
+  margin-top: 50px;
+  font-size: 25px;
+  
+}
+#Envio-hijo{
+  width: 1250px;
+}
+#Envio> #Envio-hijo{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 30px;
+  gap: 30px;
+}
+table {
+  width: 80%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #bdba00;
+  color: rgb(8, 8, 8);
+}
+
+#MediosPagos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+#MediosPagos> span{
+  margin-top: 50px;
+  font-size: 25px;
+}
+#MediosPagos> div{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+  gap: 30px;
+}
+
+#MediosPagos> div img{
+  width: 200px;
+}
+footer{
+  display: flex;        
+  justify-content: space-between; 
+  padding: 50px 450px;        
+  background-color: #16181f;
+}
+footer> div{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+ gap: 10px;
+}
+footer> div> li{
+  text-decoration: none;
+  list-style: none;
+}
+footer> div> p{
+ font-size: 20px;
+ color: #bdba00;
+ font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #features> #features-hijo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #Envio> #Envio-hijo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  table {
+    width: 300px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: none;
+    padding: 10px;
+    text-align: left; 
+}
+
+th {
+    background-color: #bdba00;
+    color: rgb(8, 8, 8);
+    text-align: center; /* Centra el texto del encabezado */
+}
+#Mediospago{
+  margin-top: 20px;
+}
+ 
+#MediosPagos> div{
+  flex-direction: column; 
+      justify-content: center;
+      align-items: center;  
+      flex-direction: row;
+      margin-top: 20px;
+}
+#MediosPagos> div img{
+  width: 80px;
+}
+
+footer {
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;  
+      flex-direction: column;
+      padding: 20px 0px; 
+      gap: 30px;
+}
+footer div {
+  lflex-direction: column; 
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+}
+
+}
