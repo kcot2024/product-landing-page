@@ -4,8 +4,8 @@ body {
   display: grid;
   grid-template-areas: 
       "header header"
-      "main aside";
-  grid-template-columns: 75% 25%; 
+      "aside main";
+  grid-template-columns: 25% 75%; 
   grid-template-rows: auto 1fr;
   height: 100vh;
 }
@@ -15,14 +15,14 @@ header {
   
 }
 
-main { 
-  grid-area: main;
-  background-color: #f4f4f4;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-  gap: 15px;
+main {
+    grid-area: main;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
+    gap: 15px;
 }
 .testimonios {
   display: contents;
