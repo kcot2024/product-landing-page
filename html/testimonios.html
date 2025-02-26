@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css"/>
     <link rel="stylesheet" href="../css/testimonio.css"/>
 </head>
 <body>
@@ -22,18 +23,39 @@
         </nav>
     </header>
     <main>
-       
-            <div id="testimonio1"><img src="https://www.shutterstock.com/image-photo/adult-female-avatar-image-on-260nw-2419909229.jpg"/> 
-                <span>"Compré un espejo LED para mi baño y la diferencia es increíble. La iluminación es perfecta para maquillarme y el diseño moderno le dio un toque elegante a mi hogar. ¡Totalmente recomendado!"</span>
-            </div>
-            <div id="testimonio2"><img src="https://www.shutterstock.com/image-photo/adult-female-avatar-image-on-260nw-2419909229.jpg"/> 
-                <span>"Compré un espejo LED para mi baño y la diferencia es increíble. La iluminación es perfecta para maquillarme y el diseño moderno le dio un toque elegante a mi hogar. ¡Totalmente recomendado!"</span></div>
-            <div id="testimonio3"> 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYfNy_cBTRHCHhmYvkUQ3VqHQ_LFkMXCUVug6Lko4rfQD2OIO00-Uu7mNbvl0KICJMxo&usqp=CAU"/> 
-                <span>"Compré un espejo LED para mi baño y la diferencia es increíble. La iluminación es perfecta para maquillarme y el diseño moderno le dio un toque elegante a mi hogar. ¡Totalmente recomendado!"</span>
- 
+        <section class="testimonios">
+            <article class="positivo">
+                <img src="https://www.shutterstock.com/image-photo/adult-female-avatar-image-on-260nw-2419909229.jpg" alt="Usuario 1">
+                <p id="nombre">Ana Rouss</p>
+                <p>"Compré un espejo LED para mi baño y la diferencia es increíble. La iluminación es perfecta para maquillarme y el diseño moderno le dio un toque elegante a mi hogar. ¡Totalmente recomendado!"</p>
+            </article>
+
+            <article class="positivo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqu89oqInWNGr6-hu5TlB4AvA2CHzoPJypgw&s" alt="Usuario 2">
+                <p id="nombre">Sofia Castro</p>
+                <p>"El espejo LED superó mis expectativas. Gran calidad y el brillo es ajustable. Me encanta el diseño minimalista."</p>
+            </article>
+
+            <article class="negativo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYfNy_cBTRHCHhmYvkUQ3VqHQ_LFkMXCUVug6Lko4rfQD2OIO00-Uu7mNbvl0KICJMxo&usqp=CAU" alt="Usuario 3">
+                <p id="nombre">Erika Santander</p>
+                <p>"El espejo llegó con un rayón en la superficie. Intenté contactar al soporte, pero no obtuve respuesta rápida."</p>
+            </article>
+            <article class="negativo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2-Yb6GOCGW4MEaq315XfZgLN0PRsP2Vhpqw&s" alt="Usuario 3">
+                <p id="nombre">Maria Gomez</p>
+                <p>"No era lo que esperaba, la calidad de los materiales parece más baja de lo que se anunciaba."</p>
+            </article>
+        </section>
+            
     </main>
-    <aside>ASIDE</aside> 
+    <aside>
+        <button id="btn-todos">Mostrar Todos</button>
+        <button id="btn-positivos">Mostrar Positivos</button>
+        <button id="btn-negativos">Mostrar Negativos</button>
+    </aside>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
 

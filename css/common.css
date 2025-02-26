@@ -1,0 +1,31 @@
+ul,
+  ol
+   {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #16181f;
+  }
+  header> nav > div > a >img {
+   width: 120px;
+  }
+  header > nav > ul {
+    display: flex;
+    gap: 20px;
+   color: aliceblue;
+  }
+  body {
+    font-family: Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
