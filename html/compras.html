@@ -4,45 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar</title>
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/comprar.css"/>
+    <!-- <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/comprar.css"/> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
 </head>
-<body>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-row3 text-white" style="background-color: #16181f;">
     <header>
-        <nav>
-        <div>
-            <a id="logo" href="./index.html" aria-label="Ir a la página de inicio"><img src="../img/logo2.png"></a>
-        </div>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../index.html">Envíos</a></li>
-            <li><a href="../html/testimonios.html">Testimonios</a></li>
-            <li><a href="../html/compras.html">Compras</a></li>
-            
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark px-3" style="background-color: #16181f;">
+            <div class="container-fluid">
+               
+                <a id="logo" class="navbar-brand" href="../index.html" aria-label="Ir a la página de inicio">
+                    <img src="../img/logo2.png" alt="Logo" width="250" height="50">
+                </a>
+    
+             
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+    
+       
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex gap-3">
+                        <li class="nav-item"><a class="nav-link" href="../index.html ">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Envíos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/testimonios.html">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/compras.html">Compras</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="testimonios">
-            <article class="positivo">
-                <img src="../img/image001.webp" alt="Usuario 1">
-                <h1>Espejo led moderno</p>
-                <p>Hermoso espejo led con finos acabados, es ideal para tu baño que le dará un toque</p>
-            </article>
-        </section>
-            
-    </main>
-    <aside>
-        <h2>Precio del Producto</h2>
-        <p class="precio">$99.99</p>
     
-        <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-            <span>Comprar</span>
-        </a>
-    </aside>
-    
+    <section class="row m-5 d-flex justify-content-around">
+        <main class="col-md-8 bg-white">
+            <section class="col">
+                <article>
+                    <img class="m-auto  float-righ m-0 p-0" src="../img/image001.webp" width="100%" alt="Usuario 1">
+                    <h1 class="fw-bold fs-1 text-black">Espejo led moderno</p>
+                    <p class="fs-4">Hermoso espejo led con finos acabados, es ideal para tu baño que le dará un toque unico</p>
+                </article>
+            </section>    
+        </main>
+        <aside class="col-md-4 gap-3 bg-dark">
+            <section class="col text-left">
+            <h2 class="fw-bold fs-1">Precio del Producto</h2>
+            <p class="fw-medium fs-2 text-danger">$99.99</p>
+        
+            <a href="https://wa.me/1234567890" 
+            class="d-flex align-items-center gap-2 p-2 rounded" 
+             target="_blank" 
+            style="width: 200px; height: 50px; background-color: #25D366; color: white; text-decoration: none; font-weight: bold; display: inline-flex; justify-content: center;">
+             <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" 
+               alt="WhatsApp" width="24" height="24">
+    <span>Comprar</span>
+</a>
 
+         
+        </section>
+        </aside>
+
+    </section>
+
+    
     <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
